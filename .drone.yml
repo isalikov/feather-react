@@ -2,7 +2,7 @@ pipeline:
   install:
     image: iknpx/archnode
     commands:
-      - yarn
+      - yarn --silent
     when:
       branch:
         - master
@@ -28,7 +28,7 @@ pipeline:
     environment:
       - NODE_ENV=production
     commands:
-      - yarn lib
+      - yarn dist
     when:
       branch:
         - master
