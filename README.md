@@ -2,15 +2,15 @@
 [![npm version](https://badge.fury.io/js/feather-react.svg)](https://badge.fury.io/js/feather-react)
 [![Downloads](http://img.shields.io/npm/dm/feather-react.svg?style=flat)](https://npmjs.org/package/feather-react)
 
-### feather-react
+# feather-react
 Simple way to start using `feater-icons` as React component
 
-##### Installation
+### Installation
 ```bash
 npm install --save feather-react
 ```
 
-##### Usage
+### Usage
 Children prop can be used as one of icon name from [feathericons.com](https://feathericons.com/)
 
 ```javascript
