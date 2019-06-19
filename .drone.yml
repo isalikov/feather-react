@@ -1,0 +1,49 @@
+pipeline:
+  install:
+    image: iknpx/archnode
+    commands:
+      - yarn
+    when:
+      branch:
+        - master
+        - develop
+      event:
+        - push
+        - pull_request
+
+  lint:
+    image: iknpx/archnode
+    commands:
+      - yarn lint
+    when:
+      branch:
+        - master
+        - develop
+      event:
+        - push
+        - pull_request
+
+  build:
+    image: iknpx/archnode
+    environment:
+      - NODE_ENV=production
+    commands:
+      - yarn lib
+    when:
+      branch:
+        - master
+        - develop
+        - develop/*
+      event:
+        - push
+        - pull_request
+
+  publish:
+    image: plugins/npm
+    secrets: [ NPM_TOKEN, NPM_EMAIL ]
+    when:
+      branch:
+        - master
+        - develop
+      event:
+        - push
