@@ -5,6 +5,8 @@
 # feather-react
 The simplest way to start using `feather icons` as React component
 
+##### [Icons List](https://iknpx.github.io/feather-react/)
+
 ### Installation
 ```bash
 npm install --save feather-react
