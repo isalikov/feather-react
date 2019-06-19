@@ -3,7 +3,7 @@
 [![Downloads](http://img.shields.io/npm/dm/feather-react.svg?style=flat)](https://npmjs.org/package/feather-react)
 
 # feather-react
-Simple way to start using `feater-icons` as React component
+The simplest way to start using `feather icons` as React component
 
 ### Installation
 ```bash
