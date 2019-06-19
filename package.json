@@ -1,8 +1,9 @@
 {
   "name": "feather-react",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Feather icons component",
-  "main": "./dist/index.min.js",
+  "main": "dist/index.min.js",
+  "typings": "src/index.d.ts",
   "repository": "git@github.com:iknpx/feather-react.git",
   "author": "Iakov Salikov <iknpx@aol.com>",
   "license": "MIT",
@@ -30,10 +31,10 @@
     "babel-preset-minify": "^0.5.0",
     "eslint": "^5.16.0",
     "eslint-config-dayler": "^1.1.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6"
   },
   "peerDependencies": {
-    "prop-types": "^15.7.2",
     "react": "^16.8.6"
   }
 }

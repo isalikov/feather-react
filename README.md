@@ -14,10 +14,10 @@ npm install --save feather-react
 Children prop can be used as one of icon name from [feathericons.com](https://feathericons.com/)
 
 ```javascript
-import Icon from 'feather-react'
+import FeatherIcon from 'feather-react'
 
 const MyComponent = () => {
-    return <Icon>feather</Icon>
+    return <FeatherIcon>feather</FeatherIcon>
 }
 ```
 
