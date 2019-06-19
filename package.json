@@ -7,6 +7,13 @@
   "author": "Iakov Salikov <iknpx@aol.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "feather",
+    "icons",
+    "feather-icons",
+    "feather-react",
+    "react-icons"
+  ],
   "scripts": {
     "dist": "babel src --out-file ./dist/index.min.js --presets minify",
     "lint": "eslint ."
