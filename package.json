@@ -1,8 +1,8 @@
 {
   "name": "feather-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Feather icons component",
-  "main": "./lib/index.min.js",
+  "main": "./dist/index.min.js",
   "repository": "git@github.com:iknpx/feather-react.git",
   "author": "Iakov Salikov <iknpx@aol.com>",
   "license": "MIT",
