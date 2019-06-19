@@ -2,12 +2,12 @@ const source = 'activity,airplay,alert-circle,alert-octagon,alert-triangle,align
 const version = '4.22.1';
 
 function loadVendors() {
-    // load wow
     const wowScript = document.createElement('script');
     wowScript.setAttribute('src', './vendors/wow.min.js');
     document.querySelector('body').appendChild(wowScript);
+
     wowScript.onload = function() {
-        new WOW({ offset: 20, live: false }).init();
+        new WOW({ offset: 5, live: false }).init();
     }
 }
 
@@ -58,10 +58,9 @@ function loadVendors() {
             const iconContainer = document.createElement('div');
             iconContainer.classList.add('icon');
             iconContainer.classList.add('wow');
-            iconContainer.classList.add('fadeIn');
+            iconContainer.classList.add('fadeInUp');
 
-            iconContainer.dataset.wowDuration = '200s'
-            iconContainer.dataset.wowDelay = '200s'
+            iconContainer.dataset.wowDuration = '.2s'
 
             const img = document.createElement('img');
             img.setAttribute('src', `./${version}/${iconName}.svg`);
@@ -78,7 +77,8 @@ function loadVendors() {
     }
 
     document.fonts.ready.then(() => {
-        onMount();
         loadVendors();
+
+        onMount();
     });
 })()
