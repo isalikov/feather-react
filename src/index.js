@@ -15,10 +15,38 @@ export const source = {
 }
 
 export default class FeatherIcon extends PureComponent {
-    componentDidMount() {
-        const { contents } = icons[this.props.children]
+    static propTypes = {
+        children: PropTypes.oneOf(source.list).isRequired,
+        className: PropTypes.string.isRequired,
+        size: PropTypes.number.isRequired,
+    }
 
-        this.svg.innerHTML = contents
+    static defaultProps = {
+        children: 'x',
+        className: '',
+        size: 24,
+    }
+
+    componentDidMount() {
+        this.setIconContents()
+    }
+
+    componentDidUpdate(prevProps) {
+        if (this.props.children !== prevProps.children) {
+            this.setIconContents()
+        }
+    }
+
+    setIconContents = () => {
+        this.container.innerHTML = this.getIconContents()
+    }
+
+    getIconContents = () => {
+        if (!this.props || !this.props.children || !this.props.children || !source.list.includes(this.props.children)) {
+            throw new Error('children prop must be string and one of valid feathericons')
+        }
+
+        return icons[this.props.children].contents
     }
 
     render() {
@@ -35,18 +63,6 @@ export default class FeatherIcon extends PureComponent {
             strokeLinecap={attrs['stroke-linecap']}
             strokeLinejoin={attrs['stroke-linejoin']}
             {...props}
-            ref={ref => this.svg = ref} />
+            ref={_ => this.container = _} />
     }
-}
-
-FeatherIcon.propTypes = {
-    children: PropTypes.oneOf(source.list).isRequired,
-    className: PropTypes.string.isRequired,
-    size: PropTypes.number.isRequired,
-}
-
-FeatherIcon.defaultProps = {
-    children: 'x',
-    className: '',
-    size: 24,
 }

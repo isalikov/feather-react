@@ -41,12 +41,13 @@ source === {
 ### Props Api
 ```javascript
 {
-    // icon name (`x` by default)
-    children: PropTypes.oneOf(source.list).isRequired,
     // icon size, will be as width/height props of root <svg> (24 by default)
     size: PropTypes.number,
 }
 ```
+
+
+##### Feather Icons version: ^4.22.1
 
 ---
 
