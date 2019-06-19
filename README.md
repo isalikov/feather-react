@@ -13,8 +13,8 @@ npm install --save feather-react
 ##### Usage
 Children prop can be used as one of icon name from [feathericons.com](https://feathericons.com/)
 
-![Alt text](https://raw.githubusercontent.com/iknpx/feather-react/master/feather.svg)
-<img src="https://raw.githubusercontent.com/iknpx/feather-react/master/feather.svg">
+![Alt text](https://iknpx.github.io/feather-react/feather.svg)
+<img src="https://iknpx.github.io/feather-react/feather.svg">
 
 ```javascript
 import Icon from 'feather-react'
