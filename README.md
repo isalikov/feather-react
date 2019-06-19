@@ -38,6 +38,14 @@ source === {
 
 ```
 
+### Props Api
+```javascript
+{
+    children: PropTypes.oneOf(source.list).isRequired,  // icon name (`x` by default)
+    size: PropTypes.number,                             // icon size, will be as width/height props of root <svg> (24 by default)
+}
+```
+
 ---
 
 :heart: Thanks [StdLib](https://stdlib.com) for your essential work with Feathericons
