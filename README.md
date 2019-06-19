@@ -23,6 +23,21 @@ const MyComponent = () => {
 
 Will return ![feather](https://iknpx.github.io/feather-react/feather.svg)
 
+### Icons Source
+```javascript
+import { source } from 'feather-react'
+
+source === {
+    icons: [{
+        id: 1,                   // random number
+        name: 'activity',        // actual name provided by feather-icons
+        tags: ['pulse', '...'],  // tags list  provided by feather-icons
+    }],
+    list: ['activity', '...'],   // array of icons names
+}
+
+```
+
 ---
 
 :heart: Thanks [StdLib](https://stdlib.com) for your essential work with Feathericons
