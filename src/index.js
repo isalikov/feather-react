@@ -38,20 +38,20 @@ export default class FeatherIcon extends PureComponent {
     }
 
     setIconContents = () => {
-        this.container.innerHTML = this.getIconContents()
+        this.container.innerHTML = this.getIconContext()
     }
 
-    getIconContents = () => {
-        if (!this.props || !this.props.children || !this.props.children || !source.list.includes(this.props.children)) {
-            throw new Error('children prop must be string and one of valid feathericons')
+    getIconContext = () => {
+        if (this.props.children && source.list.includes(this.props.children)) {
+            return icons[this.props.children].contents
         }
 
-        return icons[this.props.children].contents
+        return icons.x.contents
     }
 
     render() {
         const { children, size, ...props } = this.props
-        const { attrs } = icons[children]
+        const { attrs } = icons[children] || icons.x
 
         return <svg xmlns={attrs.xmlns}
             width={size}

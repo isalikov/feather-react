@@ -44,6 +44,5 @@ pipeline:
     when:
       branch:
         - master
-        - develop
       event:
         - push
