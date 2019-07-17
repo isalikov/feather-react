@@ -21,8 +21,6 @@ const MyComponent = () => {
 }
 ```
 
-Will return  ![feather](https://iknpx.github.io/feather-react/4.22.1/feather.svg)
-
 ### Icons Source
 ```javascript
 import { source } from 'feather-react'
