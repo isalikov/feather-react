@@ -1,6 +1,6 @@
 {
   "name": "feather-react",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "React Feather icons component",
   "main": "./dist/index.min.js",
   "typings": "./src/index.d.ts",
@@ -20,7 +20,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "feather-icons": "^4.22.1"
+    "feather-icons": "^4.24.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",

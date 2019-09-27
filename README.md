@@ -45,7 +45,7 @@ source === {
 ```
 
 
-##### Feather Icons version: ^4.22.1
+##### Feather Icons version: ^4.24.1
 
 ---
 
