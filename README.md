@@ -33,7 +33,6 @@ source === {
     }],
     list: ['activity', '...'],   // array of icons names
 }
-
 ```
 
 ### Props Api
