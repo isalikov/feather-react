@@ -1,41 +1,62 @@
 {
-  "name": "feather-react",
-  "version": "1.0.15",
-  "description": "React Feather icons component",
-  "main": "./dist/index.min.js",
-  "typings": "./src/index.d.ts",
-  "repository": "git@github.com:iknpx/feather-react.git",
-  "author": "Iakov Salikov <iknpx@aol.com>",
-  "license": "MIT",
-  "private": false,
-  "keywords": [
-    "feather",
-    "icons",
-    "feather-icons",
-    "feather-react",
-    "react-icons"
-  ],
-  "scripts": {
-    "dist": "babel src --out-file ./dist/index.min.js --presets minify",
-    "lint": "eslint ."
-  },
-  "dependencies": {
-    "feather-icons": "^4.24.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.4.3",
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "babel-preset-minify": "^0.5.0",
-    "eslint": "^5.16.0",
-    "eslint-config-dayler": "^1.1.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6"
-  },
-  "peerDependencies": {
-    "react": ">= 15"
-  }
+    "name": "feather-react",
+    "version": "3.0.0",
+    "main": "./dist/index.js",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/isalikov/feather-react.git"
+    },
+    "bugs": {
+        "url": "https://github.com/isalikov/feather-react/issues"
+    },
+    "scripts": {
+        "dist": "gulp dist",
+        "docs": "build-storybook -o docs",
+        "start": "start-storybook -p 6060",
+        "test": "jest"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "IE 10"
+    ],
+    "devDependencies": {
+        "@babel/cli": "^7.12.10",
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-react": "^7.12.10",
+        "@babel/preset-typescript": "^7.13.0",
+        "@storybook/addon-actions": "^6.2.9",
+        "@storybook/addon-controls": "^6.2.9",
+        "@storybook/addon-essentials": "^6.2.9",
+        "@storybook/addon-links": "^6.2.9",
+        "@storybook/react": "^6.2.9",
+        "@types/jest": "^26.0.23",
+        "@types/react": "^17.0.6",
+        "babel-loader": "^8.2.2",
+        "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-replace": "^1.0.0",
+        "gulp-uglify": "^3.0.2",
+        "husky": "^6.0.0",
+        "jest": "^26.6.3",
+        "lint-staged": "^11.0.0",
+        "prettier": "2.3.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "dependencies": {
+        "feather-icons": "^4.28.0"
+    }
 }

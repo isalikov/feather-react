@@ -2,7 +2,7 @@
 *sublime*
 .DS_Store
 
-*.log
-*-lock*
-
+coverage
+css
+dist
 node_modules
