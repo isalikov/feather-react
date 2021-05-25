@@ -1,4 +1,5 @@
 # Ignore artifacts:
 *.yml
 .husky
+dist
 docs
