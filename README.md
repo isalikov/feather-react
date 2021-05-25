@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/feather-react.svg)](https://badge.fury.io/js/feather-react)
 [![Downloads](http://img.shields.io/npm/dm/feather-react.svg?style=flat)](https://npmjs.org/package/feather-react)
 
-- [Documentation](https://isalikov.github.io/feather-react)
+-   [Documentation](https://isalikov.github.io/feather-react)
 
 #### Installation
 
