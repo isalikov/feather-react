@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-type IconName = 'activity'
+type IconName =
+    | 'activity'
     | 'airplay'
     | 'alert-circle'
     | 'alert-octagon'
