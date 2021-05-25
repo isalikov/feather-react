@@ -5,17 +5,17 @@
 [![Downloads](http://img.shields.io/npm/dm/feather-react.svg?style=flat)](https://npmjs.org/package/feather-react)
 
 #### Installation
+
 ```shell
 npm i --save feather-react
 ```
 
 #### Usage
+
 ```typescript
 import { Icon } from 'feather-react'
 
-const MyComponent: React.FC = () => (
-    <Icon>feather</Icon>
-)
+const MyComponent: React.FC = () => <Icon>feather</Icon>
 ```
 
 ##### Feather Icons version: ^4.28.0

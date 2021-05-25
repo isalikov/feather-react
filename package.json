@@ -17,6 +17,8 @@
     "scripts": {
         "dist": "rollup -c",
         "docs": "build-storybook -o docs",
+        "lint:check": "prettier --check --ignore-unknown .",
+        "lint:fix": "prettier --write --ignore-unknown .",
         "start": "start-storybook -p 6060"
     },
     "prettier": {
@@ -26,7 +28,7 @@
         "singleQuote": true
     },
     "lint-staged": {
-        "**/*": "prettier --write --ignore-unknown"
+        "**/*": "prettier --write --ignore-unknown ."
     },
     "browserslist": [
         "last 1 version",

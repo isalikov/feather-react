@@ -3,7 +3,7 @@ import * as React from 'react'
 import { useEffect, useMemo, useRef } from 'react'
 import { icons } from 'feather-icons'
 
-export interface IconProps extends React.HTMLAttributes<SVGSVGElement>{
+export interface IconProps extends React.HTMLAttributes<SVGSVGElement> {
     size?: number
     name?: string
     children?: string
