@@ -14,10 +14,10 @@ npm i --save feather-react
 
 #### Usage
 
-```typescript
-import { Icon } from 'feather-react'
+```tsx
+import Icon from 'feather-react'
 
-const MyComponent: React.FC = () => <Icon>feather</Icon>
+const MyComponent: React.FC = () => <Icon size={16} name="feather" />
 ```
 
 ##### Feather Icons version: ^4.28.0
