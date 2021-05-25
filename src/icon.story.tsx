@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Icon, source } from './index'
+import Icon, { source } from './index'
 
 export default {
     title: 'Icon',
