@@ -14,10 +14,18 @@ steps:
       event:
         - push
 
+  - name: lint
+    image: iknpx/archnode
+    commands:
+      - yarn lint:check
+    when:
+      branch:
+        - master
+      event:
+        - push
+
   - name: build/npm-package
     image: iknpx/archnode
-    environment:
-      NODE_ENV: production
     commands:
       - yarn dist
     when:
