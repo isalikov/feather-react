@@ -3,12 +3,14 @@
 [![npm version](https://badge.fury.io/js/feather-react.svg)](https://badge.fury.io/js/feather-react)
 [![Downloads](http://img.shields.io/npm/dm/feather-react.svg?style=flat)](https://npmjs.org/package/feather-react)
 
--   [Documentation](https://isalikov.github.io/feather-react)
+#### Icons
+- [feathericons](https://feathericons.com)
 
 #### Installation
 
 ```shell
 npm i --save feather-react
+yarn add feather-react
 ```
 
 #### Usage
@@ -16,10 +18,10 @@ npm i --save feather-react
 ```tsx
 import Icon from 'feather-react'
 
-const MyComponent: React.FC = () => <Icon size={16} name="feather" />
+const MyComponent = () => <Icon size={16} name="feather" />
 ```
 
-##### Feather Icons version: ^4.28.0
+##### Feather Icons version: ^4.29.0
 
 ---
 

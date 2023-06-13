@@ -4,6 +4,7 @@
     "license": "MIT",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
+    "type": "module",
     "files": [
         "dist"
     ],
@@ -16,9 +17,8 @@
     },
     "scripts": {
         "dist": "rollup -c",
-        "docs": "build-storybook -o docs",
-        "lint:check": "prettier --check --ignore-unknown .",
-        "lint:fix": "prettier --write --ignore-unknown .",
+        "lint": "eslint .",
+        "prepare": "husky install",
         "start": "start-storybook -p 6060"
     },
     "prettier": {
@@ -28,7 +28,10 @@
         "singleQuote": true
     },
     "lint-staged": {
-        "**/*": "prettier --write --ignore-unknown"
+        "*.ts": [
+            "prettier --write",
+            "eslint --fix"
+        ]
     },
     "browserslist": [
         "last 1 version",
@@ -36,29 +39,24 @@
         "IE 10"
     ],
     "peerDependencies": {
-        "react": "^17.0.*",
-        "react-dom": "^17.0.*"
+        "react": "^18.0.*",
+        "react-dom": "^18.0.*"
     },
     "dependencies": {
         "feather-icons": "^4.29.0"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^19.0.0",
-        "@rollup/plugin-node-resolve": "^13.0.0",
-        "@storybook/addon-actions": "^6.2.9",
-        "@storybook/addon-controls": "^6.2.9",
-        "@storybook/addon-essentials": "^6.2.9",
-        "@storybook/addon-links": "^6.2.9",
-        "@storybook/react": "^6.2.9",
-        "@types/react": "^17.0.6",
-        "husky": "^6.0.0",
-        "lint-staged": "^11.0.0",
-        "prettier": "2.3.0",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "rollup": "^2.49.0",
+        "@rollup/plugin-commonjs": "^25.0.1",
+        "@rollup/plugin-node-resolve": "^15.1.0",
+        "@types/react": "^18.2.12",
+        "husky": "^8.0.3",
+        "lint-staged": "^13.2.2",
+        "prettier": "2.8.8",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "rollup": "^3.25.1",
         "rollup-plugin-peer-deps-external": "^2.2.4",
-        "rollup-plugin-typescript2": "^0.30.0",
-        "typescript": "^4.2.4"
+        "rollup-plugin-typescript2": "^0.34.1",
+        "typescript": "^5.1.3"
     }
 }
