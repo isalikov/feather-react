@@ -1,6 +1,5 @@
 # feather-react
 
-[![Build Status](https://cloud.drone.io/api/badges/isalikov/feather-react/status.svg)](https://cloud.drone.io/isalikov/feather-react)
 [![npm version](https://badge.fury.io/js/feather-react.svg)](https://badge.fury.io/js/feather-react)
 [![Downloads](http://img.shields.io/npm/dm/feather-react.svg?style=flat)](https://npmjs.org/package/feather-react)
 

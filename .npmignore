@@ -1,18 +1,22 @@
-*sublime*
+.vs_code
 .DS_Store
 .idea
 
-*.lock
-*.snap
+*.log
+*.pid
+*.pid.lock
 
-.drone.yml
+/node_modules
+/src
+/docs
+/public
+
+/.github
+/.husky
+/.storybook
+
 .editorconfig
-.git
-.github
 .gitignore
-.storybook
+tsconfig.json
 
-coverage
-docs
-node_modules
-src
+*.lock
